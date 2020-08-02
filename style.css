@@ -329,6 +329,108 @@ ol, ul {
     box-sizing: border-box;
 }
 
+
+
+.search_form_container{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-evenly;
+}
+
+.vertical_space{
+    display: block;
+    height: 30px;
+}
+
+.width_15per{
+    width: 16%;
+}
+
+.width_20per{
+    width: 21%;
+}
+
+.width_25per{
+    width: 26%;
+}
+
+.width_30per{
+    width: 31%;
+}
+
+.width_35per{
+    width: 36%;
+}
+
+.width_40per{
+    width: 41%;
+}
+
+.width_45per{
+    width: 46%;
+}
+
+.width_50per{
+    width: 49%;
+}
+
+
+.width_100per{
+    width: 99%;
+}
+
+.search_form_hotel_field_section{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 4px 4px 4px 4px;
+    height: 45px;
+}
+
+.search_form_hotel_field_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #646464;
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0 10px;
+    position: relative;
+    border-collapse: separate;
+    border-radius: 4px 4px 4px 4px;
+    height: 100%;
+}
+
+.search_form_field_icon{
+    width: 8%;
+    min-width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search_form_hotel_field{
+    width: 90%;
+    max-width: 100%;
+    display: inline-block;
+    background-color: transparent;
+    border-color: transparent !important;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-family: IranSans,sans-serif
+}
+
+.search_form_hotel_button{
+    height: 100%;
+    color: white !important;
+    background-color: orange;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 4px 4px 4px 4px;
+}
+
+
 .pros_container{
     padding-top: 60px;
     color: #212121;

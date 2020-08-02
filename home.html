@@ -228,14 +228,62 @@
                         </a>
                     </li>
                 </ul>
+                <div class="vertical_space"></div>
                 <div class="search_form_container">
                     <p style="display:table;"></p>
-                    <form>
+
+                    <form novalidate="novalidate" class="search_form_container">
+
+
+
+                        <div class="search_form_hotel_field_section width_30per">
+                            <div class="search_form_hotel_field_container width_100per">
+                                <span class="search_form_field_icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                                <input type="text" placeholder="جستجوی مقصد یا هتل (داخلی و خارجی)" tabindex="1" class="search_form_hotel_field">
+                            </div>
+                        </div>
+
+                        <div class="search_form_hotel_field_section width_20per">
+                            <div class="search_form_hotel_field_container width_45per">
+                                <span class="search_form_field_icon">
+                                    <i class="fas fa-calendar-day"></i>
+                                </span>
+                                <input type="text" placeholder="ورود" tabindex="1" class="search_form_hotel_field">
+                            </div>
+                            <div class="vertical-break"></div>
+                            <div class="search_form_hotel_field_container width_45per">
+                                <span class="search_form_field_icon">
+                                    <i class="fas fa-calendar-day"></i>
+                                </span>
+                                <input type="text" placeholder="خروج" tabindex="1" class="search_form_hotel_field">
+                            </div>
+                        </div>
+
+                        <div class="search_form_hotel_field_section width_20per">
+                            <div class="search_form_hotel_field_container width_100per">
+                                <span class="search_form_field_icon">
+                                    <i class="far fa-user"></i>
+                                </span>
+                                <input  class="search_form_hotel_field" type="text" name="passengers" placeholder="مسافران" tabindex="4" readonly="readonly" aria-describedby="search-passengers" value="2 بزرگسال ، 1 اتاق">
+                            </div>
+                        </div>
+
+                        <div class="width_15per">
+<!--                            <div class="search_form_hotel_field_container width_100per">-->
+                                <button type="submit"  class="search_form_hotel_field search_form_hotel_button">
+                                    جستجو
+                                </button>
+<!--                            </div>-->
+                        </div>
 
                     </form>
                 </div>
 
             </div>
+
+
         </div>
     </div>
 
