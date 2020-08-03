@@ -343,6 +343,9 @@ ol, ul {
     height: 30px;
 }
 
+
+
+
 .width_15per{
     width: 16%;
 }
@@ -1475,7 +1478,7 @@ input[type=checkbox] {
 }
 
 .height_15{
-    height: 15px;
+    height: 15px !important;
 }
 
 .height_20{
@@ -1948,6 +1951,8 @@ input[type=checkbox] {
 	background-image: none;
 	border: 1px solid #d2d2d2;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: IranSans,sans-serif;
+
 }
 
 .add_hotel_form_file_input {
@@ -1963,6 +1968,31 @@ input[type=checkbox] {
 	background-color: #fff;
 	background-image: none;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: IranSans,sans-serif;
+    font-weight: 300;
+}
+
+.add_hotel_form_select_input{
+    border-radius: 3px;
+	box-shadow: none;
+	color: #646464;
+	display: block;
+	width: -moz-available;
+	height: 38px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.8;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #d2d2d2;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: IranSans,sans-serif;
+    font-weight: 300;
+}
+
+.add_hotel_form_select_option{
+    color: #646464;
+    background-color: #fff;
 }
 
 .clearable-file-input{
@@ -1988,5 +2018,7 @@ input[type=checkbox] {
 .form_text_area{
     max-width: 100%;
     min-height: 100px;
+    font-family: IranSans,sans-serif;
+
 }
 
