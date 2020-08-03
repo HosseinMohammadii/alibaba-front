@@ -2032,3 +2032,11 @@ input[type=checkbox] {
     margin-top: 4px;
     vertical-align: middle;
 }
+
+.form_icon{
+    font-size: 30px;
+    width:40px;
+    height:32px;
+    color: orange;
+    vertical-align: middle;
+}
