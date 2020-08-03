@@ -202,11 +202,12 @@
                             هتل
                         </label>
                         <select type="number" form="room_form" name="hotel" id="room_hotel" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
-                                    <option value=2 >Guzal Istanbul</option>
-                                    <option value=10>Istanbul Bakh mana</option>
-                                    <option value=3>Art Paris</option>
-                                    <option value=8>Berlin Grand Hotel</option>
-                                    <option value=25>Taleghani Tehran</option>
+<!--                             inja value hamoon id hotel ast       -->
+                            <option value=2 >Guzal Istanbul</option>
+                            <option value=10>Istanbul Bakh mana</option>
+                            <option value=3>Art Paris</option>
+                            <option value=8>Berlin Grand Hotel</option>
+                            <option value=25>Taleghani Tehran</option>
                         </select>
                     </div>
 
@@ -216,7 +217,7 @@
                         <label class="add_hotel_form_label" for="room_name">
                             نام کامل اتاق
                         </label>
-                        <input form="room_form" type="text" name="name" id="room_name" tabindex="10" dir="ltr" class="add_hotel_form_input">
+                        <input form="room_form" type="text" name="name" id="room_name" tabindex="10" dir="ltr" class="add_hotel_form_input" value="اتاق بزرگه">
                     </div>
 
                     <div class="add_hotel_form_group width_75per">
@@ -224,7 +225,7 @@
                             صبحانه دارد؟
                         </label>
 <!--                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
-                        <input type="checkbox" name="breakfast" id="room_breakfast" class="breakfast_checkbox">
+                        <input type="checkbox" name="breakfast" id="room_breakfast" class="breakfast_checkbox" checked>
                     </div>
 
                     <div class="vertical_space height_5"></div>
@@ -233,11 +234,10 @@
                         <label class="add_hotel_form_label" for="room_adult_number">
                             تعداد بزرگسال
                         </label>
-<!--                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
                         <select type="number" form="room_form" name="adult_number" id="room_adult_number" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
                                     <option value=0>0</option>
                                     <option value=1>1</option>
-                                    <option value=2>2</option>
+                                    <option value=2 selected>2</option>
                                     <option value=3>3</option>
                                     <option value=1>4</option>
                         </select>
@@ -247,22 +247,29 @@
                         <label class="add_hotel_form_label" for="room_child_number">
                             تعداد کوچکسال
                         </label>
-<!--                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
                         <select type="number" form="room_form" name="child_number" id="room_child_number" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
                                     <option value=0>0</option>
-                                    <option value=1>1</option>
+                                    <option value=1 selected>1</option>
                                     <option value=2>2</option>
                                     <option value=3>3</option>
                                     <option value=1>4</option>
                         </select>
                     </div>
 
-
-
-                    <button form="room_form" class="login_button login_green_button" type="submit">
-                        اضافه کن!
-                    </button>
                 </div>
+
+                <div class="vertical_space"></div>
+
+                <button form="room_form" style="display: inline-block" class="login_button login_green_button width_45per" type="submit">
+                        ذخیره تغییرات
+                </button>
+
+
+                <a href="login.html" >
+                    <button class="login_button login_red_button width_45per" style="display: inline-block">
+                        حذف اتاق
+                    </button>
+                </a>
 
             </div>
         </div>
