@@ -356,7 +356,7 @@ ol, ul {
 }
 
 .width_30per{
-    width: 31%;
+    width: 31% !important;
 }
 
 .width_35per{
@@ -368,11 +368,11 @@ ol, ul {
 }
 
 .width_45per{
-    width: 46%;
+    width: 46% !important;
 }
 
 .width_50per{
-    width: 49%;
+    width: 49% !important;
 }
 
 .width_60per{
@@ -384,7 +384,7 @@ ol, ul {
 }
 
 .width_75per{
-    width: 75%;
+    width: 73.7%;
 }
 
 .width_80per{
@@ -1017,6 +1017,23 @@ ol, ul {
 }
 
 
+.login_red_button{
+    /*background-color: #d9534f;*/
+    background-color: #f1371e;
+    border-color: #d43f3a;
+}
+
+.login_red_button:hover{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.login_red_button:active{
+    background-color: #ac2925;
+    border-color:#761c19;
+}
+
+
 .forgot_password{
     font-size: 14px;
     line-height: 1.8;
@@ -1134,10 +1151,10 @@ ol, ul {
 
 
 
-input[type="checkbox"]:not(.no-style) {
-	opacity: 0;
-	visibility: hidden;
-}
+/*input[type="checkbox"]:not(.no-style) {*/
+/*	opacity: 0;*/
+/*	visibility: hidden;*/
+/*}*/
 
 .have_account{
     margin-top: 25px;
@@ -1554,6 +1571,10 @@ input[type=checkbox] {
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 
+.bottom_bordered{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
 .hotel_page_room_info_title{
     display: block;
     font-size: 18px;
@@ -1906,7 +1927,8 @@ input[type=checkbox] {
 
 .add_hotel_form_group{
     position: relative;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
+    padding-bottom: 15px;
     text-align: right;
     display: inline-block;
     margin-right: 10px;
@@ -1928,6 +1950,32 @@ input[type=checkbox] {
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.add_hotel_form_file_input {
+	color: #646464;
+	display: inline-block;
+	width: 30%;
+	height: 23px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    /*margin-top: 3px;*/
+    font-size: 14px;
+	line-height: 1.8;
+	background-color: #fff;
+	background-image: none;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.clearable-file-input{
+    margin-right: 20px;
+}
+
+.clear_file_checkbox{
+    visibility: visible;
+    opacity: 100%;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
 
 .add_hotel_form_label{
     display: inline-block;
@@ -1938,7 +1986,7 @@ input[type=checkbox] {
 }
 
 .form_text_area{
-    max-width: 90%;
+    max-width: 100%;
     min-height: 100px;
 }
 

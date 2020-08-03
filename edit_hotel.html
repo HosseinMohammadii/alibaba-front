@@ -182,16 +182,21 @@
         <div class="signup_title_box">
             <i class="fas fa-hotel" style="font-size: 23px;width:38px; height:38px; color: orange" ></i>
             <h3 class="signup_title">
-                اضافه کردن هتل
+                ویرایش هتل
             </h3>
         </div>
         <div class="add_hotel_container">
             <div class="add_hotel_col">
                 <h3 class="add_hotel_caption_title">
-                        با وارد کردن اطلاعات هتل خود را اضافه کنید.
+                        هتل خود را ویرایش کنید.
                         <br>
-                        امیدواریم مشتری بیاد تو هتلت.
+                        خوب ویرایش کن مشتری بیاد.
                     </h3>
+                <h5 style="margin-top: 10px">
+                    برای ویرایش اتاق های هتل به
+                    <a class="rules"> این صفحه </a>
+                    مراجعه کنید.
+                </h5>
 
                 <form id="hotel_form" action="alibaba.ir" method="post"></form>
                 <form id="hotel_facility_form" action="alibaba.ir" method="post"></form>
@@ -200,21 +205,21 @@
                         <label class="add_hotel_form_label" for="hotel_city">
                             شهر
                         </label>
-                        <input form="hotel_form" type="text" name="city" id="hotel_city" tabindex="10" dir="ltr" class="add_hotel_form_input">
+                        <input form="hotel_form" type="text" name="city" id="hotel_city" value="Istanbul" tabindex="10" dir="ltr" class="add_hotel_form_input">
                     </div>
 
                     <div class="add_hotel_form_group width_35per">
                         <label class="add_hotel_form_label" for="hotel_name">
                             نام کامل هتل
                         </label>
-                        <input form="hotel_form" type="text" name="name" id="hotel_name" tabindex="10" dir="ltr" class="add_hotel_form_input">
+                        <input form="hotel_form" type="text" name="name" id="hotel_name" value="Istanbul Guzal Hotel" tabindex="10" dir="ltr" class="add_hotel_form_input">
                     </div>
 
                     <div class="add_hotel_form_group width_75per">
                         <label class="add_hotel_form_label" for="hotel_address">
                             آدرس دقیق هتل
                         </label>
-                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">
+                        <input form="hotel_form" type="text" name="address" id="hotel_address" value="Valiasr street" tabindex="10" dir="ltr" class="add_hotel_form_input">
                     </div>
 
                     <div class="add_hotel_form_facility_form_container width_80per">
@@ -294,15 +299,23 @@
                         <label class="add_hotel_form_label" for="hotel_instructions">
                             نکات ضروری
                         </label>
-                        <textarea form="hotel_form" name="instructions" id="hotel_instructions" tabindex="10" dir="ltr" class="add_hotel_form_input form_text_area">
-                        </textarea>
+                        <textarea form="hotel_form" name="instructions" id="hotel_instructions" tabindex="10" dir="ltr" class="add_hotel_form_input form_text_area">Be careful.</textarea>
                     </div>
 
                     <div class="add_hotel_form_group width_75per bottom_bordered">
                         <label class="add_hotel_form_label" for="hotel_image1">
                             تصویر اول
                         </label>
+                        <div style="display: block">
+                            <p style="display: inline-block; font-size: 12px;">تصویر فعلی:</p>
+                            <a style="display: inline-block; font-size: 12px;" class="rules" href="01c73e53.jpg"> 01c73e53.jpg </a>
+                            <span class="clearable-file-input">
+                                <label for="hotel_image_clear1" style="display: inline-block; font-size: 12px;">حذف تصویر</label>
+                                <input type="checkbox" name="hotel_image_clear1" id="hotel_image_clear1" class="clear_file_checkbox">
+                            </span>
+                        </div>
                         <div>
+                            <p style="display: inline-block; font-size: 12px;">تغییر تصویر:</p>
                             <input form="hotel_form" type="file" name="image1" id="hotel_image1" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
                         </div>
                     </div>
@@ -311,7 +324,16 @@
                         <label class="add_hotel_form_label" for="hotel_image2">
                             تصویر دوم
                         </label>
+                        <div style="display: block">
+                            <p style="display: inline-block; font-size: 12px;">تصویر فعلی:</p>
+                            <a style="display: inline-block; font-size: 12px;" class="rules" href="01c73e53.jpg"> 01c73e53.jpg </a>
+                            <span class="clearable-file-input">
+                                <label for="hotel_image_clear2" style="display: inline-block; font-size: 12px;">حذف تصویر</label>
+                                <input type="checkbox" name="hotel_image_clear2" id="hotel_image_clear2" class="clear_file_checkbox">
+                            </span>
+                        </div>
                         <div>
+                            <p style="display: inline-block; font-size: 12px;">تغییر تصویر:</p>
                             <input form="hotel_form" type="file" name="image2" id="hotel_image2" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
                         </div>
                     </div>
@@ -320,7 +342,16 @@
                         <label class="add_hotel_form_label" for="hotel_image3">
                             تصویر سوم
                         </label>
+                        <div style="display: block">
+                            <p style="display: inline-block; font-size: 12px;">تصویر فعلی:</p>
+                            <a style="display: inline-block; font-size: 12px;" class="rules" href="01c73e53.jpg"> 01c73e53.jpg </a>
+                            <span class="clearable-file-input">
+                                <label for="hotel_image_clear3" style="display: inline-block; font-size: 12px;">حذف تصویر</label>
+                                <input type="checkbox" name="hotel_image_clear3" id="hotel_image_clear3" class="clear_file_checkbox">
+                            </span>
+                        </div>
                         <div>
+                            <p style="display: inline-block; font-size: 12px;">تغییر تصویر:</p>
                             <input form="hotel_form" type="file" name="image3" id="hotel_image3" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
                         </div>
                     </div>
@@ -329,7 +360,16 @@
                         <label class="add_hotel_form_label" for="hotel_image4">
                             تصویر چهارم
                         </label>
+                        <div style="display: block">
+                            <p style="display: inline-block; font-size: 12px;">تصویر فعلی:</p>
+                            <a style="display: inline-block; font-size: 12px;" class="rules" href="01c73e53.jpg"> 01c73e53.jpg </a>
+                            <span class="clearable-file-input">
+                                <label for="hotel_image_clear4" style="display: inline-block; font-size: 12px;">حذف تصویر</label>
+                                <input type="checkbox" name="hotel_image_clear4" id="hotel_image_clear4" class="clear_file_checkbox">
+                            </span>
+                        </div>
                         <div>
+                            <p style="display: inline-block; font-size: 12px;">تغییر تصویر:</p>
                             <input form="hotel_form" type="file" name="image4" id="hotel_image4" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
                         </div>
                     </div>
@@ -353,26 +393,19 @@
                     </div>
 
 
-
-                    <div class="add_hotel_form_group">
-                        <div>
-                            <label class="signup_form_checkbox_label" for="signup_rules" style="display: inline-block">
-                                <input form="hotel_form" type="checkbox" name="rules" id="signup_rules" class="signup_form_check_input">
-                                <span class="signup_form_checkbox_button_control"></span>
-                                <span>
-                                    <a href="/policy" class="rules">قوانین و مقررات کار با علی بابا</a>
-                                    را می‌پذیرم.
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-
-
-
-                    <button form="hotel_form" class="login_button login_green_button" type="submit">
-                        اضافه کن!
-                    </button>
                 </div>
+                <div class="vertical_space"></div>
+
+                <button form="hotel_form" style="display: inline-block" class="login_button login_green_button width_45per" type="submit">
+                        ذخیره تغییرات
+                </button>
+
+
+                <a href="login.html" >
+                    <button class="login_button login_red_button width_45per" style="display: inline-block">
+                        حذف هتل
+                    </button>
+                </a>
 
             </div>
         </div>
