@@ -2026,7 +2026,7 @@ input[type=checkbox] {
 }
 
 
-.breakfast_checkbox{
+.has_breakfast_checkbox{
     visibility: visible;
     opacity: 100%;
     margin-top: 4px;
