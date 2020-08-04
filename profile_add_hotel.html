@@ -8,18 +8,10 @@
 
     <style>
 
+
     </style>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("navbar.html");
-    });
-    </script>
-
 </head>
 <body style="padding-top: 0">
-
     <header class="main_header">
         <div style="width: 100%">
             <nav class="nav_bar">
@@ -178,93 +170,293 @@
         </div>
     </header>
 
-    <div class="signup_main_container">
+    <div class="hotel_page_all_container">
+<!--        <div class="hotel_page_head_info_container">-->
+<!--            <div class="hotel_page_title_container">-->
+<!--                <p class="hotel_page_title">-->
+<!--                    Akgün Istanbul-->
+<!--                </p>-->
+<!--                <div style="direction: ltr; line-height: 0.5; display: inline; margin-right: 20px">-->
+<!--                    <i class="fas fa-star hotel_item_star positive_star"></i>-->
+<!--                    <i class="fas fa-star hotel_item_star positive_star"></i>-->
+<!--                    <i class="fas fa-star hotel_item_star positive_star"></i>-->
+<!--                    <i class="fas fa-star hotel_item_star positive_star"></i>-->
+<!--                    <i class="fas fa-star hotel_item_star "></i>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="hotel_page_title_address_container">-->
+<!--                <a href="#location">-->
+<!--                    <p class="hotel_page_title_address">-->
+<!--                        Asker Ocagi Cad. No:1 Taksim, Şişli, Istanbul, Turkey-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="hotel_page_sub_all_container">
+
+            <div class="profile_menu_container">
+                <div class="profile_menu_item bottom_bordered">
+                    ویرایش اطلاعات
+                </div>
+
+                <div class="profile_menu_item profile_menu_item_selected bottom_bordered">
+                    اضافه کردن هتل
+                </div>
+
+                <div class="profile_menu_item bottom_bordered">
+                    هتل ها
+                </div>
+
+                <div class="profile_menu_item bottom_bordered">
+                    اضافه کردن اتاق
+                </div>
+
+                <div class="profile_menu_item">
+                    اتاق های یک هتل
+                </div>
+
+
+
+            </div>
+
+            <div class="profile_content_container">
+            <div class="signup_main_container" style="margin: 30px 0">
         <div class="signup_title_box">
-            <i class="fas fa-bed form_icon" ></i>
+            <i class="fas fa-hotel form_icon"></i>
             <h3 class="signup_title">
-                اضافه کردن اتاق
+                اضافه کردن هتل
             </h3>
         </div>
         <div class="add_hotel_container">
             <div class="add_hotel_col">
                 <h3 class="add_hotel_caption_title">
-                        با انتخاب هتل به آن اتاق اضافه کنید.
+                        با وارد کردن اطلاعات هتل خود را اضافه کنید.
                         <br>
-                        اتاق هارو تمیز کنید.
+                        امیدواریم مشتری بیاد تو هتلت.
                     </h3>
 
-                <form id="room_form" action="alibaba.ir" method="post"></form>
+                <form id="hotel_form" action="alibaba.ir" method="post"></form>
                 <form id="hotel_facility_form" action="alibaba.ir" method="post"></form>
                 <div class="add_hotel_form" >
-
                     <div class="add_hotel_form_group width_35per">
-                        <label class="add_hotel_form_label" for="room_hotel">
-                            هتل
+                        <label class="add_hotel_form_label" for="hotel_city">
+                            شهر
                         </label>
-                        <select type="number" form="room_form" name="hotel" id="room_hotel" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
-                                    <option value=2 >Guzal Istanbul</option>
-                                    <option value=10>Istanbul Bakh mana</option>
-                                    <option value=3>Art Paris</option>
-                                    <option value=8>Berlin Grand Hotel</option>
-                                    <option value=25>Taleghani Tehran</option>
+<!--                        <input form="hotel_form" type="text" name="city" id="hotel_city" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
+                        <select type="text" form="hotel_form" name="city" id="hotel_city" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
+                                    <option>Tehran</option>
+                                    <option>Shiraz</option>
+                                    <option>London</option>
+                                    <option>Paris</option>
+                                    <option>Tabriz</option>
                         </select>
                     </div>
 
-                    <div class="vertical_space height_10"></div>
-
                     <div class="add_hotel_form_group width_35per">
-                        <label class="add_hotel_form_label" for="room_name">
-                            نام کامل اتاق
+                        <label class="add_hotel_form_label" for="hotel_name">
+                            نام کامل هتل
                         </label>
-                        <input form="room_form" type="text" name="name" id="room_name" tabindex="10" dir="ltr" class="add_hotel_form_input">
+                        <input form="hotel_form" type="text" name="name" id="hotel_name" tabindex="10" dir="ltr" class="add_hotel_form_input">
+
                     </div>
 
                     <div class="add_hotel_form_group width_75per">
-                        <label class="add_hotel_form_label" for="room_has_breakfast">
-                            صبحانه دارد؟
+                        <label class="add_hotel_form_label" for="hotel_address">
+                            آدرس دقیق هتل
                         </label>
-<!--                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
-                        <input type="checkbox" name="has_breakfast" id="room_has_breakfast" class="has_breakfast_checkbox">
+                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">
                     </div>
 
-                    <div class="vertical_space height_5"></div>
+                    <div class="add_hotel_form_facility_form_container width_80per">
 
-                    <div class="add_hotel_form_group width_15per">
-                        <label class="add_hotel_form_label" for="room_adults_number">
-                            تعداد بزرگسال
-                        </label>
-<!--                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
-                        <select type="number" form="room_form" name="adults_number" id="room_adults_number" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
-                                    <option value=0>0</option>
-                                    <option value=1>1</option>
-                                    <option value=2>2</option>
-                                    <option value=3>3</option>
-                                    <option value=1>4</option>
-                        </select>
+                        <h4>
+                            امکانات هتل
+                        </h4>
+
+                        <div class="add_hotel_form_facility_item width_100per">
+                            <div class="add_hotel_form_group width_30per">
+                                <label class="add_hotel_form_label" for="facility_type1">
+                                    نوع امکانات
+                                </label>
+<!--                                <input form="hotel_facility_form" readonly="readonly" type="text" name="type" id="facility_type1" value="استخر" tabindex="10" dir="trl" class="add_hotel_form_input">-->
+                                <select form="hotel_facility_form" name="type" id="facility_type1" disabled="disabled" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
+                                    <option class="add_hotel_form_select_option"> خوردنی</option>
+                                    <option class="add_hotel_form_select_option" selected>استخر</option>
+                                    <option class="add_hotel_form_select_option"> کلی </option>
+                                    <option class="add_hotel_form_select_option">اینترنت</option>
+                                    <option class="add_hotel_form_select_option"> حمل و نقل</option>
+                                </select>
+                            </div>
+
+                            <div class="add_hotel_form_group width_30per">
+                                <label class="add_hotel_form_label" for="facility_description1">
+                                    توضیح امکانات
+                                </label>
+                                <input form="hotel_facility_form" readonly="readonly" type="text" name="description" id="facility_description1" value="آب گرم" tabindex="10" dir="rtl" class="add_hotel_form_input">
+                            </div>
+
+                            <span class="hotel_facility_form_delete_facility">
+                                حذف امکان
+                            </span>
+                        </div>
+
+                        <div class="add_hotel_form_facility_item width_100per">
+                            <div class="add_hotel_form_group width_30per">
+                                <label class="add_hotel_form_label" for="facility_type2">
+                                    نوع امکانات
+                                </label>
+<!--                                <input form="hotel_facility_form" readonly="readonly" type="text" name="type" id="facility_type2" value="خوردنی" tabindex="10" dir="rtl" class="add_hotel_form_input">-->
+                                <select type="text" form="hotel_facility_form" name="type" id="facility_type2" disabled="disabled" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
+                                    <option class="add_hotel_form_select_option" selected> خوردنی</option>
+                                    <option class="add_hotel_form_select_option">استخر</option>
+                                    <option class="add_hotel_form_select_option"> کلی </option>
+                                    <option class="add_hotel_form_select_option">اینترنت</option>
+                                    <option class="add_hotel_form_select_option"> حمل و نقل</option>
+                                </select>
+                            </div>
+
+                            <div class="add_hotel_form_group width_30per">
+                                <label class="add_hotel_form_label" for="facility_description2">
+                                    توضیح امکانات
+                                </label>
+                                <input form="hotel_facility_form" readonly="readonly" type="text" name="description" id="facility_description2" value="رستوران ایتالیایی" tabindex="10" dir="rtl" class="add_hotel_form_input">
+                            </div>
+                            <span class="hotel_facility_form_delete_facility">
+                                حذف امکان
+                            </span>
+
+                        </div>
+
+                        <div class="add_hotel_form_facility_item width_100per">
+                            <div class="add_hotel_form_group width_30per">
+                                <label class="add_hotel_form_label" for="facility_type3">
+                                    نوع امکانات
+                                </label>
+<!--                                <input form="hotel_facility_form" type="text" name="type" id="facility_type3" tabindex="10" dir="rtl" class="add_hotel_form_input">-->
+                                <select form="hotel_facility_form" name="type" id="facility_type3" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
+                                    <option class="add_hotel_form_select_option"> خوردنی</option>
+                                    <option class="add_hotel_form_select_option">استخر</option>
+                                    <option class="add_hotel_form_select_option"> کلی </option>
+                                    <option class="add_hotel_form_select_option">اینترنت</option>
+                                    <option class="add_hotel_form_select_option"> حمل و نقل</option>
+                                </select>
+                            </div>
+
+                            <div class="add_hotel_form_group width_30per">
+                                <label class="add_hotel_form_label" for="facility_description3">
+                                    توضیح امکانات
+                                </label>
+                                <input form="hotel_facility_form" type="text" name="description" id="facility_description3" tabindex="10" dir="rtl" class="add_hotel_form_input">
+                            </div>
+                            <span class="hotel_facility_form_add_facility">
+                                ذخیره امکان
+                            </span>
+                        </div>
+
+                        <div class="add_hotel_facility_item">
+                            یک امکان دیگر
+                            <div style="display:inline-block; margin-top: 3px; vertical-align: middle; width: max-content;"><i class="fas fa-plus"></i></div>
+                        </div>
                     </div>
 
-                    <div class="add_hotel_form_group width_15per">
-                        <label class="add_hotel_form_label" for="room_children_number">
-                            تعداد کوچکسال
+
+
+                    <div class="add_hotel_form_group width_75per">
+                        <label class="add_hotel_form_label" for="hotel_instructions">
+                            نکات ضروری
                         </label>
-<!--                        <input form="hotel_form" type="text" name="address" id="hotel_address" tabindex="10" dir="ltr" class="add_hotel_form_input">-->
-                        <select type="number" form="room_form" name="children_number" id="room_children_number" tabindex="10" dir="rtl" class="add_hotel_form_select_input">
-                                    <option value=0>0</option>
-                                    <option value=1>1</option>
-                                    <option value=2>2</option>
-                                    <option value=3>3</option>
-                                    <option value=1>4</option>
-                        </select>
+                        <textarea form="hotel_form" name="instructions" id="hotel_instructions" tabindex="10" dir="ltr" class="add_hotel_form_input form_text_area">
+                        </textarea>
                     </div>
-                    <div class="vertical_space"></div>
+
+                    <div class="add_hotel_form_group width_75per bottom_bordered">
+                        <label class="add_hotel_form_label" for="hotel_image1">
+                            تصویر اول
+                        </label>
+                        <div>
+                            <input form="hotel_form" type="file" name="image1" id="hotel_image1" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
+                        </div>
+                    </div>
+
+                    <div class="add_hotel_form_group width_75per bottom_bordered">
+                        <label class="add_hotel_form_label" for="hotel_image2">
+                            تصویر دوم
+                        </label>
+                        <div>
+                            <input form="hotel_form" type="file" name="image2" id="hotel_image2" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
+                        </div>
+                    </div>
+
+                    <div class="add_hotel_form_group width_75per bottom_bordered">
+                        <label class="add_hotel_form_label" for="hotel_image3">
+                            تصویر سوم
+                        </label>
+                        <div>
+                            <input form="hotel_form" type="file" name="image3" id="hotel_image3" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
+                        </div>
+                    </div>
+
+                    <div class="add_hotel_form_group width_75per bottom_bordered">
+                        <label class="add_hotel_form_label" for="hotel_image4">
+                            تصویر چهارم
+                        </label>
+                        <div>
+                            <input form="hotel_form" type="file" name="image4" id="hotel_image4" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
+                        </div>
+                    </div>
+
+                    <div class="add_hotel_form_group width_75per bottom_bordered">
+                        <label class="add_hotel_form_label" for="hotel_image5">
+                            تصویر پنجم
+                        </label>
+                        <div>
+                            <input form="hotel_form" type="file" name="image5" id="hotel_image5" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
+                        </div>
+                    </div>
+
+                    <div class="add_hotel_form_group width_75per">
+                        <label class="add_hotel_form_label" for="hotel_image6">
+                            تصویر ششم
+                        </label>
+                        <div>
+                            <input form="hotel_form" type="file" name="image6" id="hotel_image6" tabindex="10" dir="rtl" class="add_hotel_form_file_input">
+                        </div>
+                    </div>
+
+                    <div class="vertical_space height_15"></div>
 
 
-                    <button form="room_form" class="login_button login_green_button" type="submit">
+
+                    <div class="add_hotel_form_group">
+                        <div>
+                            <label class="signup_form_checkbox_label" for="signup_rules" style="display: inline-block">
+                                <input form="hotel_form" type="checkbox" name="rules" id="signup_rules" class="signup_form_check_input">
+                                <span class="signup_form_checkbox_button_control"></span>
+                                <span>
+                                    <a href="/policy" class="rules">قوانین و مقررات کار با علی بابا</a>
+                                    را می‌پذیرم.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                    <button form="hotel_form" class="login_button login_green_button" type="submit">
                         اضافه کن!
                     </button>
                 </div>
 
             </div>
+        </div>
+    </div>
+
+            </div>
+
+
+
         </div>
     </div>
 

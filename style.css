@@ -397,7 +397,7 @@ ol, ul {
 
 
 .width_100per{
-    width: 99%;
+    width: 99% !important;
 }
 
 .search_form_hotel_field_section{
@@ -1250,6 +1250,10 @@ input[type=checkbox] {
                 width: 100%;
             }
 
+            .hotel_item_container_for_profile{
+                width: 100%;
+            }
+
             .footer_link_col{
                 width: 100%;
             }
@@ -1541,7 +1545,7 @@ input[type=checkbox] {
     display: flex;
     justify-content: flex-start;
     align-items:center !important;
-    height: 50px;
+    /*height: 50px;*/
     align-content: space-between;
     flex-direction: column;
     margin-top: 20px;
@@ -1650,7 +1654,7 @@ input[type=checkbox] {
 
 .hotel_page_room_reserve{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;;
     align-content: center;
     align-items: center;
     flex-direction: column;
@@ -1962,14 +1966,14 @@ input[type=checkbox] {
 .add_hotel_form_file_input {
 	color: #646464;
 	display: inline-block;
-	width: 30%;
+	width: 50%;
 	height: 23px;
     padding-top: 6px;
     padding-bottom: 6px;
     /*margin-top: 3px;*/
     font-size: 14px;
 	line-height: 1.8;
-	background-color: #fff;
+	background-color: transparent;
 	background-image: none;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     font-family: IranSans,sans-serif;
@@ -2039,4 +2043,92 @@ input[type=checkbox] {
     height:32px;
     color: orange;
     vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile_menu_container{
+    display: inline-block;
+    width: 20%;
+    background-color: white;
+    transition: top .5s ease;
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+    height: max-content;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+.profile_menu_item{
+    height: 40px;
+    padding-right: 20px;
+    padding-top: 10px;
+    /*text-align: center;*/
+}
+
+.profile_menu_item:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.profile_menu_item:active{
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.profile_menu_item_selected{
+    background-color: #f1f1f1;
+}
+
+.profile_content_container{
+    width: 72%;
+    display: inline-block;
+    /*margin-right: 30px;*/
+    height: min-content;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    padding:0 30px;
+}
+
+
+
+.hotels_list_for_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: -15%;
+}
+
+
+.hotel_item_container_for_profile{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+    min-width: 280px;
+    max-width: 100%;
+    line-height: 75px;
+    font-size: 15px;
+    transition: all .3s;
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 10px 20px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
 }

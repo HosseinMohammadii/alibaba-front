@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013d27ef-cad8-4359-9aa3-7a21d851d51b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/profile_add_hotel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_add_room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_hotel_rooms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_hotels.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/add_hotel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/add_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit_hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/edit_hotel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/edit_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +55,7 @@
       <workItem from="1596391644123" duration="12885000" />
       <workItem from="1596441562580" duration="14851000" />
       <workItem from="1596483434222" duration="307000" />
-      <workItem from="1596556075508" duration="1039000" />
+      <workItem from="1596556075508" duration="8655000" />
     </task>
     <servers />
   </component>
@@ -69,9 +71,9 @@
       <screen x="53" y="24" width="1313" height="744" />
     </state>
     <state x="370" y="211" key="com.intellij.ide.util.TipDialog/53.24.1313.744@53.24.1313.744" timestamp="1596441560417" />
-    <state x="357" y="121" width="863" height="590" key="find.popup" timestamp="1596483735154">
+    <state x="357" y="121" width="863" height="590" key="find.popup" timestamp="1596566715037">
       <screen x="53" y="24" width="1313" height="744" />
     </state>
-    <state x="357" y="121" width="863" height="590" key="find.popup/53.24.1313.744@53.24.1313.744" timestamp="1596483735154" />
+    <state x="357" y="121" width="863" height="590" key="find.popup/53.24.1313.744@53.24.1313.744" timestamp="1596566715037" />
   </component>
 </project>
